@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Plomberie Nancy</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="logo">Alex <span>Plomberie</span></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#avis">Avis</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="tel:0668574250" class="header-cta">📞 06 68 57 42 50</a>
+  <button class="burger" id="burger">&#9776;</button>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#services" onclick="closeNav()">Services</a>
+  <a href="#realisations" onclick="closeNav()">Réalisations</a>
+  <a href="#avis" onclick="closeNav()">Avis</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Plombier à Nancy • 7j/7</p>
+    <h1>Votre plombier<br/><em>de confiance</em><br/>à Nancy</h1>
+    <p class="hero-sub">Intervention rapide, devis gratuit, travail soigné.<br/>Disponible tous les jours pour vos urgences.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary">Devis gratuit</a>
+      <a href="tel:0668574250" class="btn btn-secondary">📞 Appeler maintenant</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">7j/7</span>
+        <span class="stat-label">Disponible</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Devis gratuit</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num">Nancy</span>
+        <span class="stat-label">& alentours</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&q=85" alt="Plombier professionnel" />
+      <div class="hero-card">
+        <span class="card-icon">✅</span>
+        <div>
+          <strong>Intervention rapide</strong>
+          <p>Disponible 7j/7</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANDEAU -->
+<div class="urgency-bar">
+  <span>🔧 Une urgence ?</span>
+  <span>Alex intervient <strong>le jour même</strong> sur Nancy</span>
+  <a href="tel:0668574250">06 68 57 42 50 →</a>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header">
+    <p class="section-tag">Nos prestations</p>
+    <h2>Ce que nous<br/><em>faisons pour vous</em></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card" data-delay="0">
+      <div class="service-num">01</div>
+      <div class="service-icon">🚿</div>
+      <h3>Pose de douches</h3>
+      <p>Installation de douches classiques, à l'italienne ou cabines intégrales. Travail soigné et étanchéité garantie.</p>
+    </div>
+    <div class="service-card" data-delay="100">
+      <div class="service-num">02</div>
+      <div class="service-icon">🔧</div>
+      <h3>Pose de robinets</h3>
+      <p>Remplacement ou installation de robinetterie cuisine, salle de bain, buanderie. Toutes marques.</p>
+    </div>
+    <div class="service-card" data-delay="200">
+      <div class="service-num">03</div>
+      <div class="service-icon">💧</div>
+      <h3>Détection de fuites</h3>
+      <p>Localisation précise des fuites sans destruction inutile. Intervention rapide pour limiter les dégâts.</p>
+    </div>
+    <div class="service-card" data-delay="300">
+      <div class="service-num">04</div>
+      <div class="service-icon">🚽</div>
+      <h3>Installation de toilettes</h3>
+      <p>Pose et remplacement de WC, broyeurs, bâtis-support. Toutes configurations, même les plus complexes.</p>
+    </div>
+    <div class="service-card" data-delay="400">
+      <div class="service-num">05</div>
+      <div class="service-icon">🔥</div>
+      <h3>Réparation chauffe-eau</h3>
+      <p>Dépannage, entretien et remplacement de chauffe-eau électrique ou gaz. Intervention le jour même.</p>
+    </div>
+    <div class="service-card" data-delay="500">
+      <div class="service-num">06</div>
+      <div class="service-icon">⚡</div>
+      <h3>Urgences 7j/7</h3>
+      <p>Fuite, canalisation bouchée, panne : Alex est disponible tous les jours pour vos urgences à Nancy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RÉALISATIONS -->
+<section id="realisations" class="light-section">
+  <div class="section-header">
+    <p class="section-tag">Galerie</p>
+    <h2>Quelques-unes de<br/><em>nos réalisations</em></h2>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item tall">
+      <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Salle de bain rénovée" loading="lazy"/>
+      <div class="gallery-caption">Rénovation salle de bain complète</div>
+    </div>
+    <div class="gallery-col">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80" alt="Robinetterie moderne" loading="lazy"/>
+        <div class="gallery-caption">Pose robinetterie haut de gamme</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1620626011761-996317702782?w=600&q=80" alt="Douche italienne" loading="lazy"/>
+        <div class="gallery-caption">Installation douche à l'italienne</div>
+      </div>
+    </div>
+    <div class="gallery-col">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Chauffe-eau" loading="lazy"/>
+        <div class="gallery-caption">Remplacement chauffe-eau</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Plomberie moderne" loading="lazy"/>
+        <div class="gallery-caption">Rénovation salle d'eau</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section id="avis">
+  <div class="section-header">
+    <p class="section-tag">Ce qu'ils disent</p>
+    <h2>Avis de nos <em>clients</em></h2>
+    <div class="rating-global">
+      <div class="stars-big">★★★★★</div>
+      <p>4,5 / 5 — Note Google</p>
+    </div>
+  </div>
+  <div class="testimonials">
+    <div class="testimonial" data-delay="0">
+      <div class="quote-icon">"</div>
+      <div class="stars">★★★★★</div>
+      <p>Très professionnel. Il fait appel à lui depuis plus de 10 ans pour intervenir dans mes locatifs. N'hésitez pas, il est top !</p>
+      <cite>— Avis Google vérifié</cite>
+    </div>
+    <div class="testimonial" data-delay="150">
+      <div class="quote-icon">"</div>
+      <div class="stars">★★★★★</div>
+      <p>J'ai fait faire ma salle de bain, je suis très content du résultat. Alex m'avait été conseillé par un collègue et vraiment pas déçu — professionnel et de très bon conseil.</p>
+      <cite>— Avis Google vérifié</cite>
+    </div>
+    <div class="testimonial" data-delay="300">
+      <div class="quote-icon">"</div>
+      <div class="stars">★★★★★</div>
+      <p>Dépannage rapide et efficace à Nancy. J'ai contacté Alex pour une fuite sous ma baignoire, il est intervenu le jour même. Travail soigné et tarif raisonnable. Je recommande à 100% !</p>
+      <cite>— Avis Google vérifié</cite>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-wrapper">
+    <div class="contact-left">
+      <p class="section-tag">Parlons de votre projet</p>
+      <h2>Demandez votre<br/><em>devis gratuit</em></h2>
+      <p class="contact-desc">Remplissez le formulaire ou appelez directement. Alex vous répond rapidement et se déplace sur Nancy et ses alentours.</p>
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <strong>Téléphone</strong>
+            <p>06 68 57 42 50</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p>alexdel54@hotmail.fr</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <strong>Zone d'intervention</strong>
+            <p>Nancy & alentours</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🕐</span>
+          <div>
+            <strong>Disponibilité</strong>
+            <p>7j/7 pour vos urgences</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" placeholder="Jean Dupont" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" placeholder="06 XX XX XX XX" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="jean@email.fr" required />
+        </div>
+        <div class="form-group">
+          <label for="service">Type de prestation</label>
+          <select id="service">
+            <option value="">Sélectionnez un service</option>
+            <option>Pose de douche</option>
+            <option>Pose de robinet</option>
+            <option>Détection de fuite</option>
+            <option>Installation de toilettes</option>
+            <option>Réparation chauffe-eau</option>
+            <option>Urgence / Dépannage</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Décrivez votre besoin</label>
+          <textarea id="message" rows="4" placeholder="Décrivez votre projet ou problème..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Envoyer ma demande →</button>
+        <p class="form-note">✅ Devis 100% gratuit et sans engagement</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Alex <span>Plomberie</span></div>
+    <p>Votre plombier de confiance à Nancy & alentours — disponible 7j/7</p>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-contact">📞 06 68 57 42 50 &nbsp;|&nbsp; ✉️ alexdel54@hotmail.fr</p>
+    <p class="footer-legal">© 2026 Alex Plomberie Nancy — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
